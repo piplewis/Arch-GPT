@@ -33,7 +33,7 @@ pacman -Syu --noconfirm
 pacman -S --noconfirm linux-lts linux-lts-headers linux-firmware intel-ucode amd-ucode \
 grub efibootmgr os-prober sudo vim base-devel xdg-user-dirs xdg-utils terminus-font \
 openssh bash-completion networkmanager dnsutils ufw firewalld htop btop fzf xclip \
-pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber
+pipewire pipewire-alsa pipewire-jack wireplumber
 
 # GPU Drivers (Auto-detect)
 if lspci | grep -i "NVIDIA"; then
