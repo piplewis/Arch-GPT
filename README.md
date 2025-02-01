@@ -11,22 +11,20 @@ This script helps me avoid forgetting key installation steps.
 
 ## **💻 Installation Process**
 ### **1️⃣ Boot into Arch Installation Media**
-- Start your system from an **Arch ISO (USB/DVD)**.
-- Open a terminal.
+- Boot your system from an **Arch ISO (USB/DVD)**.
 
 ### **2️⃣ Prepare the System**
+- I use these commands after ISO has booted
+
 - **Set UK keyboard layout**:
-  ```bash
   loadkeys uk
 
-    Partition the drive (Modify as needed):
-        Example for UEFI:
-
+- **Format the partition**:
     mkfs.ext4 /dev/sda2
 
     Modify based on your setup.
 
-Ensure Wi-Fi is working (for laptops):
+Ensure Wi-Fi is working:
 
 rfkill unblock all
 iwctl
@@ -60,7 +58,7 @@ Before running the script, update the username from piplewis to your own:
 
     Open install_arch.sh:
 
-nano install_arch.sh
+vim install_arch.sh
 
 Change:
 
